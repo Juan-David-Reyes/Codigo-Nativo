@@ -293,6 +293,12 @@ footer{
 }
 @media screen and (max-width:1050px){
 
+    .herosection .container{
+        grid-template-columns: 1fr;
+    }
+    .herosection{
+        border-radius: 0 0 400px 0 ;
+    }
     .footer{
         grid-template-columns: 1fr 1fr;
     }
@@ -300,6 +306,18 @@ footer{
 }
 
 @media screen and (max-width:768px){
+    .herosection{
+        border-radius: 0 0 200px 0;
+        h3{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+    }
+    .heroimage img{
+        top: 0;
+    }
     .mobile_menu{
         display: flex;
         z-index: 2;
@@ -363,5 +381,22 @@ footer{
 
 
 @media screen and (max-width:480px){
+    .herosection {
+        .icons{
+            gap: 16px;
+            img{
+                max-width: 40px;
+            }    
+
+        }
+        
+    }
+    .herosection{
+        border-radius: 0;
+        padding: 140px 40px 40px;
+    }
     
+    .heroimage{
+        display: none;
+    }
 }
