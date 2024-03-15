@@ -43,6 +43,10 @@ header .header {
   gap: 40px;
 }
 
+.herosection {
+  padding: 120px 40px;
+  box-sizing: border-box;
+}
 .herosection .icons img {
   max-width: 50px;
   width: 100%;
