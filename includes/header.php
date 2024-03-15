@@ -1,4 +1,4 @@
-<header>
+<header id="header">
     <div class="header">
         <a href="#" class="logo">
             <img src="https://codigonativo.com/wp-content/uploads/2021/04/dark_logo.svg" alt="">

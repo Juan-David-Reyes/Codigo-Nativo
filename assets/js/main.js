@@ -41,4 +41,26 @@ $(document).ready(function(){
 
     });
 
+
+
+    // Función para agregar la clase al hacer scroll
+function ScrollHeader() {
+    var scrollY = window.scrollY;
+    var elemento = document.querySelector('#header');
+
+    if (scrollY > 120) { // Cambia este valor según tu preferencia
+      elemento.classList.add('scroll');
+    } else {
+      elemento.classList.remove('scroll');
+    }
+  }
+
+  // Evento para llamar a la función cuando se hace scroll
+  window.addEventListener('scroll', ScrollHeader);
+
+
+
+
+
 });
+
