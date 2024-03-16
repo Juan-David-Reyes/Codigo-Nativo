@@ -8,10 +8,10 @@
             <div class="container">
                 <div class="content">
                     <div class="icons">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/3d-report-1-1.webp" alt="">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/favourites-1-1.webp" alt="">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/landing-page-1-1.webp" alt="">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/stopwatch-1-1.webp" alt="">
+                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/3d-report-1-1.webp" alt="estadísticas">
+                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/favourites-1-1.webp" alt="best rate">
+                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/landing-page-1-1.webp" alt="escalable">
+                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/stopwatch-1-1.webp" alt="velocidad">
                     </div>
                     <h2 class="title">
                         <span class="t_small">PDF GRATUITO</span> <br> Sistema <span class="green"> Nativo</span>
@@ -32,23 +32,23 @@
                 <div class="servicios">
                     <a href="#" class="serv c1">
                         <h3>Diseño Web</h3>
-                        <img src="https://codigonativo.com/wp-content/uploads/2023/06/Diseno-web-1.webp" alt="Diseño web">
+                        <img width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Diseno-web-1.webp" alt="Diseño web">
                     </a>
                     <a href="#" class="serv c2">
                         <h3>Auditoría Web</h3>
-                        <img src="https://codigonativo.com/wp-content/uploads/2023/06/Auditoria_card-1.webp" alt="Auditorías web">
+                        <img width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Auditoria_card-1.webp" alt="Auditorías web">
                     </a>
                     <a href="#" class="serv c3">
                         <h3>Mantenimiento Web</h3>
-                        <img src="https://codigonativo.com/wp-content/uploads/2023/06/Mantenimiento.webp" alt="Mantenimiento web">
+                        <img width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Mantenimiento.webp" alt="Mantenimiento web">
                     </a>
                     <a href="#" class="serv c4">
                         <h3>Optimización Web</h3>
-                        <img src="https://codigonativo.com/wp-content/uploads/2023/06/Optimizacion-card.webp" alt="Optimización web">
+                        <img width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Optimizacion-card.webp" alt="Optimización web">
                     </a>
                     <a href="#" class="serv c5">
                         <h3>Rediseño Web</h3>
-                        <img src="https://codigonativo.com/wp-content/uploads/2023/06/Rediseno-web.webp" alt="Rediseño Web">
+                        <img width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Rediseno-web.webp" alt="Rediseño Web">
                     </a>
                 </div>
             </div>
