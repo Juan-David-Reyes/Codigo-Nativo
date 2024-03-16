@@ -20,7 +20,7 @@
                     <a href="#" class="cta_outline">¡Lo quiero!</a>
                 </div>
                 <picture class="heroimage">
-                    <img class="lazyload" width="640" height="838" src="https://codigonativo.com/wp-content/uploads/2023/06/relax.webp" alt="">
+                    <img class="" width="640" height="838" src="https://codigonativo.com/wp-content/uploads/2023/06/relax.webp" alt="">
                 </picture>
             </div>
         </section>
