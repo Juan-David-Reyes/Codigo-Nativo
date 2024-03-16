@@ -8,10 +8,10 @@
             <div class="container">
                 <div class="content">
                     <div class="icons">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/3d-report-1-1.webp" alt="estadísticas">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/favourites-1-1.webp" alt="best rate">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/landing-page-1-1.webp" alt="escalable">
-                        <img width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/stopwatch-1-1.webp" alt="velocidad">
+                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/3d-report-1-1.webp" alt="estadísticas">
+                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/favourites-1-1.webp" alt="best rate">
+                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/landing-page-1-1.webp" alt="escalable">
+                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/stopwatch-1-1.webp" alt="velocidad">
                     </div>
                     <h2 class="title">
                         <span class="t_small">PDF GRATUITO</span> <br> Sistema <span class="green"> Nativo</span>
@@ -20,7 +20,7 @@
                     <a href="#" class="cta_outline">¡Lo quiero!</a>
                 </div>
                 <picture class="heroimage">
-                    <img width="640" height="838" src="https://codigonativo.com/wp-content/uploads/2023/06/relax.webp" alt="">
+                    <img class="lazyload" width="640" height="838" src="https://codigonativo.com/wp-content/uploads/2023/06/relax.webp" alt="">
                 </picture>
             </div>
         </section>
