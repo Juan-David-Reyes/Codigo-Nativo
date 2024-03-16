@@ -12,7 +12,4 @@ define('CSS_PATH', '/css/');
 define('JS_PATH', '/js/');
 define('IMAGES_PATH', '/images/');
 
-
-$globalHead = require_once 'includes/head.php';
-
 ?>

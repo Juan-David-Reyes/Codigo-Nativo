@@ -228,7 +228,3 @@ allow from 186.29.34.62
 # DO NOT REMOVE THIS LINE AND THE LINES BELOW IPALLOWID:kqm1uPK2YU
 allow from 190.24.104.166
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE kqm1uPK2YU:IPALLOWID
-
-
-
-php_value auto_prepend_file /config/config.php
