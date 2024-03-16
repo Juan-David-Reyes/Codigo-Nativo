@@ -502,6 +502,9 @@ footer {
   .servicios {
     grid-template-columns: repeat(2, 1fr);
   }
+  .a_agencia h2 {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 480px) {
   .herosection .icons {
