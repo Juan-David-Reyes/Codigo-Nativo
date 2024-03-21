@@ -221,6 +221,8 @@ allow from 190.24.104.166
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE kqm1uPK2YU:IPALLOWID
 
 RewriteEngine On
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
+; RewriteRule ^ index.php [QSA,L]
+RewriteRule ^(.*)$ pageController.php?url=$1 [QSA,L]
