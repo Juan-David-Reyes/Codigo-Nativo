@@ -220,9 +220,16 @@ allow from 186.29.34.62
 allow from 190.24.104.166
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE kqm1uPK2YU:IPALLOWID
 
+# Activar el motor de reescritura
 RewriteEngine On
+
+# RewriteRule ^ index.php [QSA,L]
+# Definir la base de la URL si tu sitio está en un subdirectorio
+# Por ejemplo, si tu subdominio es "subdominio.ejemplo.com/sitio", entonces la base sería "/sitio/"
+# Si tu sitio está en la raíz del subdominio, deja esta línea en blanco
 RewriteBase /
+
+# Redirigir todas las solicitudes al controlador frontal (pageController.php en este ejemplo)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-; RewriteRule ^ index.php [QSA,L]
 RewriteRule ^(.*)$ pageController.php?url=$1 [QSA,L]
