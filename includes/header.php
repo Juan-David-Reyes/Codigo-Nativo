@@ -11,14 +11,16 @@
         </div>
         <nav class="main_navbar">
             <ul>
-                <li><a href="" class="active">Inicio</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="../index.php" class="<?php echo ($_SERVER['REQUEST_URI'] == '/index.php') ? 'active' : ''; ?>">Inicio</a></li>
+                <li><a href="/nosotros.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/nosotros.php') ? 'active' : ''; ?>">Nosotros</a></li>
+                <li><a href="/servicios.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/servicios.php') ? 'active' : ''; ?>">Servicios</a></li>
+                <li><a href="/blog.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/blog.php') ? 'active' : ''; ?>">Blog</a></li>
+                <li><a href="/contacto.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/contacto.php') ? 'active' : ''; ?>">Contacto</a></li>
+                <li><a href="/quiz.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'quiz.php') ? 'active' : ''; ?>">QUIZ</a></li>
             </ul>
         </nav>
     </div>
     <span class="overlay"></span>
 </header>
  
+<main>

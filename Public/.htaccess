@@ -210,15 +210,6 @@
 	SetEnvIF X-CLUSTER-CLIENT-IP "^51\.75\.122\.244$" DenyAccess
 
 
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-    RewriteBase /
-    RewriteRule ^index\.php$ - [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule . /index.php [L]
-</IfModule>
 
 # DO NOT REMOVE THIS LINE AND THE LINES BELOW IPALLOWID:Mldp8Mmhfq
 allow from 186.29.34.62
@@ -228,3 +219,8 @@ allow from 186.29.34.62
 # DO NOT REMOVE THIS LINE AND THE LINES BELOW IPALLOWID:kqm1uPK2YU
 allow from 190.24.104.166
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE kqm1uPK2YU:IPALLOWID
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
