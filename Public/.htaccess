@@ -233,9 +233,3 @@ RewriteBase /Public/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ pageController.php?url=$1 [QSA,L]
-
-<Directory "/ruta/a/tu/directorio">
-    Options Indexes FollowSymLinks
-    AllowOverride FileInfo
-    Require all granted
-</Directory>
