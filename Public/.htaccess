@@ -227,7 +227,7 @@ RewriteEngine On
 # Definir la base de la URL si tu sitio está en un subdirectorio
 # Por ejemplo, si tu subdominio es "subdominio.ejemplo.com/sitio", entonces la base sería "/sitio/"
 # Si tu sitio está en la raíz del subdominio, deja esta línea en blanco
-RewriteBase /Public/
+RewriteBase /test/
 
 # Redirigir todas las solicitudes al controlador frontal (pageController.php en este ejemplo)
 RewriteCond %{REQUEST_FILENAME} !-f
