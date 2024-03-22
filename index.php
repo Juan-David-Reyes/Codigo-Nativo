@@ -1,3 +1,3 @@
 <?php
 
-include (__DIR__ . 'Public/index.php');
+require_once (__DIR__ . '/Public/index.php');
