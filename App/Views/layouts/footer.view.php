@@ -47,5 +47,3 @@
     </footer>
 
     <script src="https://unpkg.com/web-vitals@5.0.2/dist/web-vitals.iife.js" defer></script>
-</body>
-</html>

@@ -12,28 +12,28 @@
                 <div class="cont-beneficios">
                     <div class="beneficios">
                         <picture>
-                            <img src="../../images/Conversion.svg" width="68" height="68" alt="">
+                            <img src="<?= URL_PATH ?>Assets/images/Conversion.svg" width="68" height="68" alt="">
                         </picture>
                         <h3>Aumento en la conversión y retención de usuarios</h3>
                         <p>gracias a soluciones pensadas para dar avances rápidos, medibles y centrados en tus objetivos.</p>
                     </div>
                     <div class="beneficios">
                         <picture>
-                            <img src="../../images/costos.svg" width="68" height="68" alt="">
+                            <img src="<?= URL_PATH ?>Assets/images/costos.svg" width="68" height="68" alt="">
                         </picture>
                         <h3>Reducción de costos</h3>
                         <p>al anticipar y resolver problemas clave desde las primeras etapas del diseño, mediante prototipos funcionales que validan los diseños.</p>
                     </div>
                     <div class="beneficios">
                         <picture>
-                            <img src="../../images/mercado.svg" width="68" height="68" alt="">
+                            <img src="<?= URL_PATH ?>Assets/images/mercado.svg" width="68" height="68" alt="">
                         </picture>
                         <h3>productos alineados con las necesidades del mercado</h3>
                         <p>diseñados con base en investigación y validación continua.</p>
                     </div>
                     <div class="beneficios">
                         <picture>
-                            <img src="../../images/user-experience.svg" width="68" height="68" alt="">
+                            <img src="<?= URL_PATH ?>Assets/images/user-experience.svg" width="68" height="68" alt="">
                         </picture>
                         <h3>experiencias de usuario excepcionales</h3>
                         <p>que fidelizan y generan confianza en tus usuarios.</p>
@@ -70,7 +70,7 @@
                         </li>
                     </ol>
                     <picture>
-                        <img width="600" height="600" src="../../images/metodologia.webp#F2F0E9" alt="">
+                        <img width="600" height="600" src="<?= URL_PATH ?>Assets/images/metodologia.webp#F2F0E9" alt="">
                     </picture>
                 </div>
             </div>
@@ -93,42 +93,42 @@
                 <h2> Entregables UX que Impulsan Resultados</h2>
                 <ul class="e-items">
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Wireframes</h3>
                         <p>Bocetos básicos que muestran cómo se organizará la información en una página o app, sin detalles visuales.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Prototipos interactivos</h3>
                         <p>Versiones preliminares del diseño que permiten simular cómo funcionará un sitio web o aplicación antes de construirlo.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Diseño visual final</h3>
                         <p>El resultado completo y detallado del diseño con colores, imágenes, y elementos listos para ser implementados.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Guía de estilo</h3>
                         <p>Un manual que define colores, fuentes y elementos visuales para asegurar que todo se vea coherente en el proyecto.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Pruebas de usabilidad</h3>
                         <p>Evaluaciones donde usuarios reales prueban el diseño para asegurarse de que sea fácil y claro de usar.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Documentación estratégica</h3>
                         <p>Información que explica los objetivos y enfoques del diseño, para que todos los involucrados sigan el mismo plan.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Guías de investigación</h3>
                         <p>Indicaciones y resultados sobre las necesidades de los usuarios, basadas en estudios y entrevistas.</p>
                     </li>
                     <li class="e-item">
-                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <img width="48" height="48" src="<?= URL_PATH ?>Assets/images/mercado.svg" alt="">
                         <h3>Benchmarks</h3>
                         <p>Un análisis comparativo para evaluar cómo está tu diseño frente a la competencia o estándares del mercado.</p>
                     </li>

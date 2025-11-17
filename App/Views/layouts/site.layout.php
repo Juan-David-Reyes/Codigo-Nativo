@@ -65,9 +65,9 @@
 </head>
     <body>
 
-       <?php require_once(__DIR__ . '/header.view.php'); ?>
-       <?php echo $content ?>
-       <?php require_once(__DIR__ . '/footer.view.php'); ?>
-        
+    <?php require_once(__DIR__ . '/header.view.php'); ?>
+    <?php echo $content ?>
+    <?php require_once(__DIR__ . '/footer.view.php'); ?>
+    
     </body>
 </html>
