@@ -30,7 +30,7 @@ class Router {
         // parámetros: todo lo que queda después de controller/method
         $this->params = array_slice($segments, 2);
 
-        $controllerFile = __DIR__ . '/controllers/' . $this->controller . '.php';
+        $controllerFile = __DIR__ . '/Controllers/' . $this->controller . '.php';
         if (!file_exists($controllerFile)) {
             $this->send404("Controller file not found: $controllerFile");
             return;
