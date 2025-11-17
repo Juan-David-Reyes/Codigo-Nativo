@@ -4,6 +4,7 @@ class Router {
     private $controller;
     private $method;
     private $params = [];
+    private $searchedFile;
 
     public function __construct()
     {
@@ -31,6 +32,8 @@ class Router {
         $this->params = array_slice($segments, 2);
 
         $controllerFile = __DIR__ . '/Controllers/' . $this->controller . '.php';
+        // Guardar la ruta buscada para que send404 pueda registrarla correctamente
+        $this->searchedFile = $controllerFile;
         if (!file_exists($controllerFile)) {
             $this->send404("Controller file not found: $controllerFile");
             return;
@@ -83,7 +86,7 @@ class Router {
             'controller' => $this->controller ?? null,
             'method' => $this->method ?? null,
             'params' => $this->params ?? null,
-            'controller_file_searched' => isset($controllerFile) ? $controllerFile : (__DIR__ . '/controllers/' . ($this->controller ?? 'unknown') . '.php'),
+            'controller_file_searched' => $this->searchedFile ?? (__DIR__ . '/controllers/' . ($this->controller ?? 'unknown') . '.php'),
             'url' => defined('URL') ? URL : null,
             'url_path' => defined('URL_PATH') ? URL_PATH : null,
         ];
