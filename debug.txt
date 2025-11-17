@@ -1,0 +1,7 @@
+{
+    "REQUEST_URI": "\/index.php",
+    "SCRIPT_NAME": "\/index.php",
+    "DOCUMENT_ROOT": "\/home\/u253535907\/domains\/codigonativo.com\/public_html\/test",
+    "URL": "index.php",
+    "URL_PATH": "\/"
+}
