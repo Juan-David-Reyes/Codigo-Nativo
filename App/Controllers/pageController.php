@@ -5,5 +5,5 @@
             $this->render('home', [], 'site');
         }
     }
-    
+
 ?>
