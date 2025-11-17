@@ -58,17 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         lastScrollY = currentScrollY;
-    });
-
-    // Funcion para llamar el año actual
-
-    function updateCurrentYear() {
-        var currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').innerText = currentYear;
-    }
-    // Llamar a la función para inicializar el año actual
-    updateCurrentYear();
- 
+    }); 
     
     // Función FAQS
     const faqs = document.querySelectorAll(".faq");

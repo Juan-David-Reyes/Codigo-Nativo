@@ -7,7 +7,7 @@
                     <img width="140" height="44" src="<?= URL_PATH ?>Assets/images/light_logo.svg" alt="Código Nativo - Logo">
                 </picture>
                 <p>
-                    <b>Código Nativo</b> crea experiencias digitales inolvidables para tus usuarios, con un enfoque en la usabilidad, el diseño intuitivo y la optimización del rendimiento.
+                    <strong>Código Nativo</strong> crea experiencias digitales inolvidables para tus usuarios, con un enfoque en la usabilidad, el diseño intuitivo y la optimización del rendimiento.
                 </p>
             </div>
             <nav role="navigation" aria-label="Navegación principal">
@@ -42,7 +42,7 @@
             </nav>
         </div>
         <div class="cont">
-            <h6>©<span id="currentYear">2025</span> Código Nativo. Todos los Derechos Reservados.</h6>
+            <h6>© <?= date('Y') ?> Código Nativo. Todos los Derechos Reservados.</h6>
         </div>
     </footer>
 

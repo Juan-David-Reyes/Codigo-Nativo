@@ -1,7 +1,11 @@
 RewriteEngine on
 
+# Preserve Authorization header for APIs
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /test/
+
+# Si el sitio está en la raíz del dominio/subdominio, usar '/'.
+# Cambia esto sólo si tu aplicación está en un subdirectorio (p.ej. '/test/').
+RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
