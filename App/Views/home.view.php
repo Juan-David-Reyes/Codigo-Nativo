@@ -1,151 +1,176 @@
-
-
-    <header id="header">
-        <a href="https://wa.link/5dlehz" target="_blank" class="cta_whatsapp">
-            <img src="https://codigonativo.com/wp-content/uploads/2023/05/WhatsApp.webp" alt="Contactanos aquí por Whatsapp">
-        </a>
-        <div class="header">
-            <a href="#" class="logo">
-                <img src="https://codigonativo.com/wp-content/uploads/2021/04/dark_logo.svg" alt="">
-            </a>
-            <div class="mobile_menu">
-                <span class="fas fa-bars"></span>
-            </div>
-            <nav class="main_navbar">
-                <ul>
-                    <li><a href="../index.php" class="<?php echo ($_SERVER['REQUEST_URI'] == '/index.php') ? 'active' : ''; ?>">Inicio</a></li>
-                    <li><a href="/nosotros.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/nosotros.php') ? 'active' : ''; ?>">Nosotros</a></li>
-                    <li><a href="/servicios.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/servicios.php') ? 'active' : ''; ?>">Servicios</a></li>
-                    <li><a href="/blog.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/blog.php') ? 'active' : ''; ?>">Blog</a></li>
-                    <li><a href="/contacto.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'includes/contacto.php') ? 'active' : ''; ?>">Contacto</a></li>
-                    <li><a href="/quiz.php" class="<?php echo ($_SERVER['REQUEST_URI'] == 'quiz.php') ? 'active' : ''; ?>">QUIZ</a></li>
-                </ul>
-            </nav>
-        </div>
-        <span class="overlay"></span>
-    </header>
- 
-    <main>
-
-
-    <section class="herosection">
+<section class="section header">
             <div class="container">
-                <div class="content">
-                    <div class="icons">
-                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/3d-report-1-1.webp" alt="estadísticas">
-                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/favourites-1-1.webp" alt="best rate">
-                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/landing-page-1-1.webp" alt="escalable">
-                        <img class="lazyload" width="50" height="50" src="https://codigonativo.com/wp-content/uploads/2023/06/stopwatch-1-1.webp" alt="velocidad">
+                <h1>Diseño UX/UI para potenciar tu negocio</h1>
+                <p>Diseñamos productos digitales personalizados basados en las necesidades de tus usuarios. Creamos experiencias intuitivas, funcionales y memorables que impulsan el éxito de tu negocio.</p>
+                <a id="cta-whatsapp-diseno-ux" href="https://wa.me/573126357309?text=Hola%2C+estoy+interesado+en+sus+servicios+de+dise%C3%B1o+UX%2FUI." target="_blank" rel="noopener noreferrer" class="cta-green" class="cta">¡Hablemos!<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <section class="section beneficios">
+            <div class="container">
+                <h2>Beneficios de contratar un Diseño UX/UI Profesional</h2>
+                <div class="cont-beneficios">
+                    <div class="beneficios">
+                        <picture>
+                            <img src="../../images/Conversion.svg" width="68" height="68" alt="">
+                        </picture>
+                        <h3>Aumento en la conversión y retención de usuarios</h3>
+                        <p>gracias a soluciones pensadas para dar avances rápidos, medibles y centrados en tus objetivos.</p>
                     </div>
-                    <h2 class="title">
-                        <span class="t_small">PDF GRATUITO</span> <br> Sistema <span class="green"> Nativo</span>
-                    </h2>
-                    <h3>Nuestro sistema para <span class="green"> empresas de servicios </span> que quieren atraer <span class="green"> hordas de clientes </span> por internet</h3>
-                    <a href="#" class="cta_outline">¡Lo quiero!</a>
-                </div>
-                <picture class="heroimage">
-                    <img class="" width="640" height="838" src="https://codigonativo.com/wp-content/uploads/2023/06/relax.webp" alt="">
-                </picture>
-            </div>
-        </section>
-
-
-        <section class="a_agencia">
-            <div class="container">
-                <h2>Agencia de Diseño Web</h2>
-                <div class="desc">Somos una Agencia de Diseño Web especializada en psicología del consumidor y estrategia digital. Tenemos todo lo que necesitas para que tu marca tenga una posición sólida en Internet. <b> Conoce nuestros servicios.</b></div>
-                <div class="servicios">
-                    <a href="#" class="serv c1">
-                        <h3>Diseño Web</h3>
-                        <img class="lazyload" width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Diseno-web-1.webp" alt="Diseño web">
-                    </a>
-                    <a href="#" class="serv c2">
-                        <h3>Auditoría Web</h3>
-                        <img class="lazyload" width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Auditoria_card-1.webp" alt="Auditorías web">
-                    </a>
-                    <a href="#" class="serv c3">
-                        <h3>Mantenimiento Web</h3>
-                        <img class="lazyload" width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Mantenimiento.webp" alt="Mantenimiento web">
-                    </a>
-                    <a href="#" class="serv c4">
-                        <h3>Optimización Web</h3>
-                        <img class="lazyload" width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Optimizacion-card.webp" alt="Optimización web">
-                    </a>
-                    <a href="#" class="serv c5">
-                        <h3>Rediseño Web</h3>
-                        <img class="lazyload" width="250" height="250" src="https://codigonativo.com/wp-content/uploads/2023/06/Rediseno-web.webp" alt="Rediseño Web">
-                    </a>
+                    <div class="beneficios">
+                        <picture>
+                            <img src="../../images/costos.svg" width="68" height="68" alt="">
+                        </picture>
+                        <h3>Reducción de costos</h3>
+                        <p>al anticipar y resolver problemas clave desde las primeras etapas del diseño, mediante prototipos funcionales que validan los diseños.</p>
+                    </div>
+                    <div class="beneficios">
+                        <picture>
+                            <img src="../../images/mercado.svg" width="68" height="68" alt="">
+                        </picture>
+                        <h3>productos alineados con las necesidades del mercado</h3>
+                        <p>diseñados con base en investigación y validación continua.</p>
+                    </div>
+                    <div class="beneficios">
+                        <picture>
+                            <img src="../../images/user-experience.svg" width="68" height="68" alt="">
+                        </picture>
+                        <h3>experiencias de usuario excepcionales</h3>
+                        <p>que fidelizan y generan confianza en tus usuarios.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        
-        <section class="">
+        <section class="section metodologia">
             <div class="container">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic adipisci magni, sunt corporis eius numquam animi odit sed cum obcaecati error delectus explicabo neque, cupiditate provident voluptatem, assumenda necessitatibus.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic adipisci magni, sunt corporis eius numquam animi odit sed cum obcaecati error delectus explicabo neque, cupiditate provident voluptatem, assumenda necessitatibus.
-            </div>
-        </section>
-        <section class="fullwidth">
-            <div class="container">
-                <div class="content">
-                    <h2>¡No pierdas más tiempo!</h2>
-                    <div>Ponte en contacto con nosotros hoy mismo y descubre cómo podemos diseñar una página web que ayude a tu negocio a crecer. ¡Te esperamos!</div>
-                    <a class="cta" href="#">¡Contáctanos ahora!</a>
+                <h2>Tu proyecto en nuestra metodología</h2>
+                <p>Adaptamos nuestro enfoque a las necesidades de cada proyecto, utilizando metodologías como Design Thinking o Design Sprint para garantizar soluciones efectivas y rápidas.</p>
+                <div class="paso-a-paso">
+                    <ol>
+                        <li>
+                            <h3><span>01</span>Investigación</h3>
+                            <p>Entendemos a tus usuarios y tus objetivos mediante herramientas como entrevistas, mapas de empatía y análisis del mercado.</p>
+                        </li>
+                        <li>
+                            <h3><span>02</span>Ideación</h3>
+                            <p>Generamos soluciones creativas y centradas en el usuario, ya sea en procesos iterativos o en un sprint intensivo de 5 días.</p>
+                        </li>
+                        <li>
+                            <h3><span>03</span>Prototipado</h3>
+                            <p>Creamos prototipos funcionales para validar ideas, con foco en reducir riesgos y optimizar el desarrollo.</p>
+                        </li>
+                        <li>
+                            <h3><span>04</span>Pruebas de usabilidad</h3>
+                            <p>Probamos y mejoramos el diseño basado en datos reales y retroalimentación directa.</p>
+                        </li>
+                        <li>
+                            <h3><span>05</span>Iteración</h3>
+                            <p>Aplicamos las mejores prácticas para que cada solución sea funcional, intuitiva y memorable.</p>
+                        </li>
+                    </ol>
+                    <picture>
+                        <img width="600" height="600" src="../../images/metodologia.webp#F2F0E9" alt="">
+                    </picture>
                 </div>
             </div>
         </section>
 
-    </main>
+<!--         <section class="section casos-exito">
+            <div class="container">
+                <h2>Casos de éxito</h2>
+            </div>
+        </section> -->
 
-<footer>
+<!--         <section class="section ux-ui">
+            <div class="container">
+                <h2>¿Qué es UX/UI y cómo mejora tu negocio?</h2>
+            </div>
+        </section> -->
 
-<!-- Scripts -->
+        <section class="section entregables">
+            <div class="container">
+                <h2> Entregables UX que Impulsan Resultados</h2>
+                <ul class="e-items">
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Wireframes</h3>
+                        <p>Bocetos básicos que muestran cómo se organizará la información en una página o app, sin detalles visuales.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Prototipos interactivos</h3>
+                        <p>Versiones preliminares del diseño que permiten simular cómo funcionará un sitio web o aplicación antes de construirlo.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Diseño visual final</h3>
+                        <p>El resultado completo y detallado del diseño con colores, imágenes, y elementos listos para ser implementados.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Guía de estilo</h3>
+                        <p>Un manual que define colores, fuentes y elementos visuales para asegurar que todo se vea coherente en el proyecto.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Pruebas de usabilidad</h3>
+                        <p>Evaluaciones donde usuarios reales prueban el diseño para asegurarse de que sea fácil y claro de usar.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Documentación estratégica</h3>
+                        <p>Información que explica los objetivos y enfoques del diseño, para que todos los involucrados sigan el mismo plan.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Guías de investigación</h3>
+                        <p>Indicaciones y resultados sobre las necesidades de los usuarios, basadas en estudios y entrevistas.</p>
+                    </li>
+                    <li class="e-item">
+                        <img width="48" height="48" src="../../images/mercado.svg" alt="">
+                        <h3>Benchmarks</h3>
+                        <p>Un análisis comparativo para evaluar cómo está tu diseño frente a la competencia o estándares del mercado.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="<?= URL_PATH ?>Assets/js/lazysizes.min.js" async></script>
-<script src="<?= URL_PATH ?>Assets/js/main.js"></script>
+<!--         <section class="section sabias">
+            <div class="container">
+                <h2>¿Sabías que...? Datos Clave sobre UX/UI</h2>
+            </div>
+        </section> -->
 
-<!-- ******************** -->
-
-<div class="footer">
-    <div class="info_cn">
-        <a href="" class="logo">
-            <img src="https://codigonativo.com/wp-content/uploads/2024/01/CodigoNativo.svg" alt="">
-        </a>
-        <h1 class="desc_footer">
-            Desarrollamos Sitios Web SMART. Haz que te descubran las personas correctas, captura sus datos de contacto y los convierte en clientes automáticamente.
-        </h1>
-        <div class="since">
-            © 2024 Código Nativo. Todos los Derechos Reservados
-        </div>
-        <nav class="legal_navbar">
-            <ul>
-                <li><a href="">Políticas de privacidad</a></li>
-                <li><a href="">Legal</a></li>
-                <li><a href="">Política de cookies</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="navegacion_footer">
-        <nav class="navbar_services">
-            <h4>SERVICIOS DESTACADOS</h4>
-            <ul>
-                <li><a href="">Diseño web</a></li>
-                <li><a href="">Auditoría web</a></li>
-                <li><a href="">Mantenimiento​ web</a></li>
-                <li><a href="">Optimización web</a></li>
-                <li><a href="">Rediseño web</a></li>
-            </ul>
-        </nav>
-        <nav class="navbar_navegacion">
-            <h4>NAVEGACIÓN</h4>
-            <ul>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Sitemap</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-</footer>
+        <section class="section faqs">
+            <div class="container">
+                <h2>Preguntas frecuentes</h2>
+                <div class="container-faqs">
+                    <div class="faq">
+                        <h3 class="question">¿Para qué tipo de proyectos aplica el diseño UX/UI? <span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">Diseñamos experiencias digitales para sitios web, aplicaciones móviles, plataformas SaaS y más.</p>
+                        
+                    </div>
+                    <div class="faq">
+                        <h3 class="question">¿Cómo es el proceso de diseño UX/UI?<span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">Comenzamos con una fase de investigación y análisis, luego pasamos a prototipos y wireframes, y finalmente trabajamos en el diseño visual y pruebas de usabilidad.</p>
+                    </div>
+                    <div class="faq">
+                        <h3 class="question">¿Qué herramientas utilizan para diseñar?<span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">Usamos herramientas líderes en la industria como Figma, Adobe Suit, Google Suit, y plataformas de testing como Maze. Puede que en algunos casos necesarios maquetas en HTML, CSS y JS</p>
+                    </div>
+                    <div class="faq">
+                        <h3 class="question">¿Involucran a los usuarios en el proceso?<span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">Sí, realizamos pruebas de usuario y entrevistas para garantizar que el diseño cumpla con las necesidades reales de tus clientes.</p>
+                    </div>
+                    <div class="faq">
+                        <h3 class="question">¿Qué recibiré al final del proyecto?<span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">Entregamos prototipos funcionales, guías de estilo y archivos listos para ser implementados por desarrolladores.</p>
+                    </div>
+                    <div class="faq">
+                        <h3 class="question">¿Cuánto tiempo toma un proyecto de diseño UX/UI?<span class="fas fa-chevron-down"></span></h3>
+                        <p class="answer">El tiempo depende del alcance y el tipo de entregable, puede variar desde 4 semanas en adelante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>

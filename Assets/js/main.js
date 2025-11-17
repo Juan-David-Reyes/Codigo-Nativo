@@ -1,66 +1,104 @@
-$(document).ready(function(){
-
-    let btn = document.querySelector('.mobile_menu');
-    let iconMenu = document.querySelector('.mobile_menu .fas');
-    let containerMenu = document.querySelector('.main_navbar');
-    let overlay = document.querySelector('.overlay');
-
-    $(btn).click(function(){
-        
-        if( $(btn).hasClass('active') ){
-
-            $(btn).removeClass('active');
-            
-            let myTimeout = setTimeout(myGreeting, 300);
-            $(overlay).css('opacity', '0');
-            
-            function myGreeting() {
-                $(overlay).css('display', 'none');
-            }
-            
-            $(iconMenu).removeClass('fa-times');
-            $(containerMenu).removeClass('active');
-
-        } else {
-            let myTimeout = setTimeout(myGreeting, 100);
 
 
-            $(btn).addClass('active')
+document.addEventListener("DOMContentLoaded", function () {
+    const serviciosBtn = document.getElementById("servicios");
+    const mobileMenuBtn = document.querySelector(".mobile-menu");
+    const submenu = document.querySelector(".submenu");
+    const header = document.querySelector("header");
+    const mobileIcon = mobileMenuBtn.querySelector("i"); // Icono dentro de .mobile-menu
+    let lastScrollY = window.scrollY;
 
-            $(overlay).css('display', 'flex');
-            $(overlay).css('transition', '300ms ease all');
-            
-            function myGreeting() {
-                $(overlay).css('opacity', '1');
-            }
+    // Función para alternar el submenu
+    function toggleSubmenu(event) {
+        event.stopPropagation(); // Evita que el clic se propague al documento
+        const isActive = submenu.classList.toggle("active");
+        serviciosBtn.classList.toggle("active"); // Añade o remueve la clase active en #servicios
+        serviciosBtn.setAttribute("aria-expanded", isActive); // Cambia aria-expanded según el estado del submenu
+    }
 
-            $(iconMenu).addClass('fa-times');
-            $(containerMenu).addClass('active');
+    // Alternar visibilidad del submenu al hacer clic en los botones
+    serviciosBtn.addEventListener("click", toggleSubmenu);
 
+    // Agregar soporte para Enter y Space
+    serviciosBtn.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault(); // Previene el desplazamiento de la página con Space
+            toggleSubmenu(event); // Activa la función de alternar submenu
         }
-
     });
 
+    // Alternar el menú móvil y cambiar el ícono
+    mobileMenuBtn.addEventListener("click", function () {
+        submenu.classList.toggle("active");
+        mobileIcon.classList.toggle("fa-bars");
+        mobileIcon.classList.toggle("fa-close"); // Cambia entre las clases
+    });
 
+    // Ocultar el submenu al hacer clic fuera del header
+    document.addEventListener("click", function (event) {
+        if (!header.contains(event.target)) {
+            submenu.classList.remove("active");
+            serviciosBtn.classList.remove("active"); // Asegura que se remueva la clase active
+            serviciosBtn.setAttribute("aria-expanded", "false"); // Cambia aria-expanded a false
+            mobileIcon.classList.add("fa-bars");
+            mobileIcon.classList.remove("fa-close"); // Asegura que vuelva al estado inicial
+        }
+    });
 
-    // Función para agregar la clase al hacer scroll
-function ScrollHeader() {
-    var scrollY = window.scrollY;
-    var elemento = document.querySelector('#header');
+    // Ocultar el submenu al hacer scroll más de 10px
+    window.addEventListener("scroll", function () {
+        const currentScrollY = window.scrollY;
 
-    if (scrollY > 120) { // Cambia este valor según tu preferencia
-      elemento.classList.add('scroll');
-    } else {
-      elemento.classList.remove('scroll');
+        if (Math.abs(currentScrollY - lastScrollY) > 10) {
+            submenu.classList.remove("active");
+            serviciosBtn.classList.remove("active"); // Asegura que se remueva la clase active
+            serviciosBtn.setAttribute("aria-expanded", "false"); // Cambia aria-expanded a false
+            mobileIcon.classList.add("fa-bars");
+            mobileIcon.classList.remove("fa-close"); // Asegura que vuelva al estado inicial
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
+    // Funcion para llamar el año actual
+
+    function updateCurrentYear() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').innerText = currentYear;
     }
-  }
+    // Llamar a la función para inicializar el año actual
+    updateCurrentYear();
+ 
+    
+    // Función FAQS
+    const faqs = document.querySelectorAll(".faq");
 
-  // Evento para llamar a la función cuando se hace scroll
-  window.addEventListener('scroll', ScrollHeader);
+    faqs.forEach((faq) => {
+        const question = faq.querySelector(".question");
+        const answer = faq.querySelector(".answer");
 
+        question.addEventListener("click", () => {
+            const isActive = question.classList.contains("active");
 
+            // Cerrar todos los contenedores
+            faqs.forEach((item) => {
+                const itemAnswer = item.querySelector(".answer");
+                const itemQuestion = item.querySelector(".question");
 
+                itemAnswer.style.maxHeight = null; // Cierra
+                itemAnswer.style.paddingBottom = "0"; // Quitar padding dinámico
+                itemQuestion.classList.remove("active");
+            });
 
+            // Si no estaba activo, activarlo
+            if (!isActive) {
+                question.classList.add("active");
+                answer.style.maxHeight = answer.scrollHeight + "px"; // Ajusta la altura dinámica
+                answer.style.paddingBottom = "24px"; // Ajusta la padding a 24px Bottom
+            }
+        });
+    });
 
+  
 });
 
