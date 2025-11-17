@@ -83,7 +83,7 @@ class Router {
             'controller' => $this->controller ?? null,
             'method' => $this->method ?? null,
             'params' => $this->params ?? null,
-            'controller_file_searched' => isset($controllerFile) ? $controllerFile : (__DIR__ . '/Controllers/' . ($this->controller ?? 'unknown') . '.php'),
+            'controller_file_searched' => isset($controllerFile) ? $controllerFile : (__DIR__ . '/controllers/' . ($this->controller ?? 'unknown') . '.php'),
             'url' => defined('URL') ? URL : null,
             'url_path' => defined('URL_PATH') ? URL_PATH : null,
         ];
