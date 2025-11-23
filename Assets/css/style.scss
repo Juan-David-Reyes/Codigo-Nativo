@@ -1,5 +1,5 @@
-html{
-    
+:root{
+
     /* Colores de fondo */
     --color-bg-primary: #fafafa;
     --color-bg-beige-pearl: #f2f0e9;
@@ -10,11 +10,11 @@ html{
     --color-bg-dark-hover: #16191e;
     --color-bg-ligh-gray: #CECECE;
     --color-bg-accent: #1AFD71;
-
+    
     /* Colores Badges */
     --color-badge-nuevo: #EA63FF;
     --color-badge-destacado: #FF7328;
-
+    
     /* Colores de texto */
     --color-text-accent: #1AFD71;
     --color-text-secondary: #666666;
@@ -25,16 +25,20 @@ html{
     --color-text-linkblue: #3053E2;
     --color-text-linkblue-hover: #4A6BF3;
     --color-text-linkblue-active: #1F3CB0;
-
+    
     /* Otros colores */
     --color-border: #dddddd;
     --color-highlight: #ff6600;
-
+    
     /* Fuentes */
     --font-title: "Poppins", sans-serif;
     --font-body: "Inter", sans-serif;
     --font-awesome:"Font Awesome 6 Free";
+}
 
+html{
+
+    
     background-color: var(--color-bg-light-blue);
     box-sizing: border-box;
     font-family: var(--font-body);
@@ -48,6 +52,9 @@ html{
         font-family: var(--font-body);
         margin: 0;
     }
+}
+body{
+    -webkit-font-smoothing: antialiased;
 }
 h1{
     font-size: 56px;

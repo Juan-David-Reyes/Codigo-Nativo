@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html {
+:root {
   /* Colores de fondo */
   --color-bg-primary: #fafafa;
   --color-bg-beige-pearl: #f2f0e9;
@@ -30,6 +30,9 @@ html {
   --font-title: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-awesome:"Font Awesome 6 Free";
+}
+
+html {
   background-color: var(--color-bg-light-blue);
   box-sizing: border-box;
   font-family: var(--font-body);
@@ -43,6 +46,10 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 html p, html span {
   font-family: var(--font-body);
   margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -104,9 +111,7 @@ header {
 
 button {
   content: "";
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -143,7 +148,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
   width: max-content;
   box-sizing: border-box;
   transition: 300ms ease-out;
@@ -213,8 +217,7 @@ section.section .container {
   top: 16px;
   margin: 0 auto;
   border-radius: 16px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 .navbar .menu {
   display: flex;
@@ -352,8 +355,7 @@ section.section .container {
 .navbar .submenu img {
   height: 100%;
   max-width: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .navbar .submenu .serv {
   display: grid;
@@ -428,8 +430,7 @@ section.section .container {
   gap: 24px;
 }
 .cont-beneficios img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 66px;
 }
 .cont-beneficios h3 {
@@ -497,8 +498,7 @@ section.section .container {
   overflow: hidden;
 }
 .metodologia img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -635,8 +635,7 @@ section.faqs .container {
 #servicios-list .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #servicios-list .swiper-slide p {
   text-align: left;
@@ -768,8 +767,7 @@ footer a:hover {
   max-width: 140px;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footerInfo p {
   margin: 0;

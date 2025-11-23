@@ -1,7 +1,0 @@
-{
-    "REQUEST_URI": "\/",
-    "SCRIPT_NAME": "\/index.php",
-    "DOCUMENT_ROOT": "\/Users\/juandavid\/Sites\/Codigo-Nativo",
-    "URL": "",
-    "URL_PATH": "\/"
-}
