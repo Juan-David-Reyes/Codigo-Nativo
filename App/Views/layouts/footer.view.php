@@ -42,7 +42,8 @@
         </nav>
     </div>
     <div class="cont">
-        <h6>© <?= date('Y') ?> Código Nativo. Todos los Derechos Reservados.</h6>
+        <h6><span>© <?= date('Y') ?> Código Nativo.</span>  Todos los derechos reservados.</h6>
+        <a href="https://www.linkedin.com/company/codigonativo" target="_blank"><span>Linkedin</span> <img src="<?= URL_PATH ?>Assets/images/linkedin.svg" alt="Linkedin"></a>
     </div>
 </footer>
 

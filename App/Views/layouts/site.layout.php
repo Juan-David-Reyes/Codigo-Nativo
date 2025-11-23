@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
     <!-- Título y Descripción -->
-    <title>Diseño UX/UI | Código Nativo</title>
+    <title>Agencia de Marketing Digital | Código Nativo</title>
     <meta name="description" content="Codigo Nativo - Agencia de diseño web profesional para optimizar tu negocio online. Diseño, desarrollo y mantenimiento web.">
     <meta name="keywords" content="diseño web, desarrollo web, mantenimiento web, SEO, Codigo Nativo">
 

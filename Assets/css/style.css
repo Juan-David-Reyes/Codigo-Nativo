@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Greycliff;
+  src: url(/assets/fonts/subset-GreycliffCF-Medium.woff2) format("woff2"), url(/assets/fonts/subset-GreycliffCF-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Greycliff;
+  src: url(/assets/fonts/subset-GreycliffCF-Bold.woff2) format("woff2"), url(/assets/fonts/subset-GreycliffCF-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Greycliff;
+  src: url(/assets/fonts/subset-GreycliffCF-ExtraBold.woff2) format("woff2"), url(/assets/fonts/subset-GreycliffCF-ExtraBold.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   /* Colores de fondo */
   --color-bg-primary: #fafafa;
@@ -27,7 +48,7 @@
   --color-border: #dddddd;
   --color-highlight: #ff6600;
   /* Fuentes */
-  --font-title: "Poppins", sans-serif;
+  --font-title: "Greycliff CF", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-awesome:"Font Awesome 6 Free";
 }
@@ -42,6 +63,7 @@ html {
 html h1, html h2, html h3, html h4, html h5, html h6 {
   font-family: var(--font-title);
   margin: 16px 0;
+  letter-spacing: -0.02em;
 }
 html p, html span {
   font-family: var(--font-body);
@@ -56,24 +78,28 @@ h1 {
   font-size: 56px;
   line-height: 100%;
   font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 120%;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 h3 {
   font-size: 32px;
   line-height: 100%;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 h4 {
   font-size: 24px;
   line-height: 100%;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 p {
@@ -116,8 +142,10 @@ button {
   border: 0;
   outline: 0;
   color: var(--color-text-light);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   font-family: var(--font-title);
+  letter-spacing: -0.02em;
 }
 button:hover {
   color: var(--color-text-accent) !important;
@@ -295,9 +323,10 @@ section.section .container {
   justify-content: center;
   align-items: center;
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-text-light);
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: -0.02em;
 }
 .navbar li a:hover {
   color: var(--color-text-accent);
@@ -697,6 +726,66 @@ section.faqs .container {
   color: var(--color-text-dark);
 }
 
+.slider-brands {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+  background-color: #06132d;
+  padding: 48px 16px;
+}
+.slider-brands h2 {
+  margin-bottom: 64px;
+}
+.slider-brands .slider {
+  height: 100px;
+  width: 100%;
+  max-width: 1140px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.slider-brands .slider::before, .slider-brands .slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 10vw;
+  z-index: 1;
+  background: linear-gradient(to right, #06132d 0%, rgba(6, 19, 45, 0) 100%);
+}
+.slider-brands .slider::after {
+  right: 0;
+  left: auto;
+  background: linear-gradient(to left, #06132d 0%, rgba(6, 19, 45, 0) 100%);
+}
+.slider-brands .slider .move {
+  display: flex;
+  width: 3600px;
+  animation: animacion 50s linear infinite;
+}
+@keyframes animacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1800px);
+  }
+}
+.slider-brands .slider .box {
+  height: 60px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-brands .move img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(10);
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -710,7 +799,7 @@ footer {
 }
 footer .cont {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1140px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 48px;
@@ -719,16 +808,23 @@ footer .cont {
   margin: 0 auto;
 }
 footer .cont:last-child {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 100px;
+  gap: 16px;
+}
+footer .cont:last-child a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
 }
 footer h6 {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
 }
 footer h6 span {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
 }
 footer h4 {
   margin: 0 0 16px;
@@ -926,6 +1022,16 @@ footer a:hover {
   footer .cont {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  footer .cont:last-child {
+    grid-template-columns: 1fr;
+  }
+  footer .cont:last-child a {
+    order: 1;
+  }
+  footer .cont:last-child h6 {
+    text-align: center;
+    order: 2;
   }
   footer nav {
     grid-template-columns: 1fr;
