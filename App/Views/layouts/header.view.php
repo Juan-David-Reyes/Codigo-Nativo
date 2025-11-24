@@ -1,8 +1,8 @@
 <header>
     <nav class="navbar">
         <div class="menu">
-            <picture>
-                <a href="https://codigonativo.com/">
+                <picture>
+                <a href="<?= URL_PATH ?>">
                     <img loading="lazy" src="<?= URL_PATH ?>Assets/images/dark_logo.svg" width="120" height="38" alt="Código Nativo | Agencia de marketing digital">
                 </a>
             </picture>
@@ -13,7 +13,7 @@
                     </li>
                 </ul>
                 <ul class="link-menu" role="menu">
-                    <li role="menuitem"><a href="https://codigonativo.com/">Inicio</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>">Inicio</a></li>
                     <li role="menuitem"><a href="https://codigonativo.com/nosotros/">Nosotros</a></li>
                     <li role="group"><button type="button" aria-haspopup="true" aria-expanded="false" id="servicios">Servicios<i class="arrowService fas fa-chevron-down"></i></button></li>
                     <li role="menuitem"><a href="https://codigonativo.com/blog/">Blog</a></li>
@@ -95,7 +95,7 @@
                 </a>
             </li>
             
-            <li class="linkAllServices" role="menuitem"><a href="https://codigonativo.com/servicios">Ver todos los servicios</a></li>
+            <li class="linkAllServices" role="menuitem"><a href="<?= URL_PATH ?>servicios">Ver todos los servicios</a></li>
         </ul>
     </nav>
 </header>

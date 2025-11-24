@@ -25,7 +25,7 @@
             <section aria-labelledby="navigation">
                 <h4 id="navigation">Navegación</h4>
                 <ul role="menu">
-                    <li role="menuitem"><a href="http://codigonativo.com">Inicio</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>">Inicio</a></li>
                     <li role="menuitem"><a href="http://codigonativo.com/nosotros">Nosotros</a></li>
                     <li role="menuitem"><a href="http://codigonativo.com/blog">Blog</a></li>
                     <li role="menuitem"><a href="http://codigonativo.com/contacto">Contacto</a></li>
