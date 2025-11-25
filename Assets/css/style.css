@@ -147,9 +147,7 @@ header {
 
 button {
   content: "";
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -188,7 +186,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
   width: max-content;
   box-sizing: border-box;
   transition: 300ms ease-out;
@@ -258,8 +255,7 @@ section.section .container {
   top: 16px;
   margin: 0 auto;
   border-radius: 16px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 .navbar .menu {
   display: flex;
@@ -398,8 +394,7 @@ section.section .container {
 .navbar .submenu img {
   height: 100%;
   max-width: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .navbar .submenu .serv {
   display: grid;
@@ -474,8 +469,7 @@ section.section .container {
   gap: 24px;
 }
 .cont-beneficios img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 66px;
 }
 .cont-beneficios h3 {
@@ -543,8 +537,7 @@ section.section .container {
   overflow: hidden;
 }
 .metodologia img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -681,8 +674,7 @@ section.faqs .container {
 #servicios-list .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #servicios-list .swiper-slide p {
   text-align: left;
@@ -742,6 +734,190 @@ section.faqs .container {
 #servicios-list .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-bg-accent);
   color: var(--color-text-dark);
+}
+
+.proyects {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  min-width: 950px;
+}
+.proyects .card {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: 300ms ease all;
+}
+.proyects .card::before {
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: max-content;
+  margin: auto;
+  background-color: #295EE2;
+  color: var(--color-text-light);
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  transition: 300ms ease all;
+  font-size: 14px;
+}
+.proyects .card:nth-child(1) {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+.proyects .card:nth-child(1)::before {
+  content: "@PazDesdeElVientre";
+}
+.proyects .card:nth-child(1):hover {
+  transform: rotate(-12deg) translateY(-24px);
+}
+.proyects .card:nth-child(1):hover + div {
+  transform: rotate(-4deg) translateX(20px);
+}
+.proyects .card:nth-child(1):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(1):hover::before {
+  top: -50px;
+}
+.proyects .card:nth-child(2) {
+  left: 13%;
+  top: -40px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+.proyects .card:nth-child(2)::before {
+  content: "@APSAP";
+}
+.proyects .card:nth-child(2):hover {
+  transform: rotate(-7deg) translateY(-24px);
+}
+.proyects .card:nth-child(2):hover + div {
+  transform: translateX(10px);
+}
+.proyects .card:nth-child(2):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(2):hover::before {
+  top: -50px;
+}
+.proyects .card:nth-child(3) {
+  left: 27%;
+  top: -62px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+.proyects .card:nth-child(3)::before {
+  content: "@NaciónPodcast";
+}
+.proyects .card:nth-child(3):hover {
+  transform: rotate(-3deg) translateY(-24px);
+}
+.proyects .card:nth-child(3):hover + div {
+  transform: rotate(6deg) translateX(10px);
+}
+.proyects .card:nth-child(3):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(3):hover::before {
+  top: -50px;
+}
+.proyects .card:nth-child(4) {
+  right: 38%;
+  top: -60px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(3deg);
+  z-index: 4;
+}
+.proyects .card:nth-child(4)::before {
+  content: "@AdvanceDerma";
+}
+.proyects .card:nth-child(4):hover {
+  transform: rotate(3deg) translateY(-24px);
+}
+.proyects .card:nth-child(4):hover + div {
+  transform: rotate(10deg) translateX(10px);
+}
+.proyects .card:nth-child(4):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(4):hover::before {
+  top: -50px;
+}
+.proyects .card:nth-child(5) {
+  left: 55%;
+  top: -36px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(7deg);
+  z-index: 5;
+}
+.proyects .card:nth-child(5)::before {
+  content: "@Mielatto";
+}
+.proyects .card:nth-child(5):hover {
+  transform: rotate(7deg) translateY(-24px);
+}
+.proyects .card:nth-child(5):hover + div {
+  transform: rotate(13deg) translateX(14px);
+}
+.proyects .card:nth-child(5):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(5):hover::before {
+  top: -50px;
+}
+.proyects .card:nth-child(6) {
+  left: 69%;
+  top: 5px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(10deg);
+  z-index: 6;
+}
+.proyects .card:nth-child(6)::before {
+  content: "@AprendetePodcast";
+}
+.proyects .card:nth-child(6):hover {
+  transform: rotate(12deg) translateY(-24px);
+}
+.proyects .card:nth-child(6):hover img {
+  width: 100%;
+  height: 100%;
+}
+.proyects .card:nth-child(6):hover::before {
+  top: -50px;
+}
+.proyects img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms ease all;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 @keyframes moveInCircle {
@@ -918,6 +1094,14 @@ section.faqs .container {
   align-items: center;
   text-align: center;
 }
+.home-hero .content_cont h1 {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.desc-hero {
+  max-width: 600px;
+}
 
 .slider-brands {
   text-align: center;
@@ -975,8 +1159,7 @@ section.faqs .container {
 .slider-brands .move img {
   width: 120px;
   height: 60px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   filter: grayscale(1) brightness(10);
 }
 
@@ -1057,8 +1240,7 @@ footer a:hover {
   max-width: 140px;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footerInfo p {
   margin: 0;

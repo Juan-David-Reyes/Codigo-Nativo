@@ -16,6 +16,10 @@
             public function legal(){
                 $this->render('legal', [], 'site');
             }
+
+            public function blog(){
+                $this->render('blog', [], 'site');
+            }
     }
 
 ?>

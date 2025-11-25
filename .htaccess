@@ -1,13 +1,18 @@
+<?php
 RewriteEngine on
 
 # Preserve Authorization header for APIs
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-# Si el sitio está en la raíz del dominio/subdominio, usar '/'.
-# Cambia esto sólo si tu aplicación está en un subdirectorio (p.ej. '/test/').
 RewriteBase /
 
+# EXCLUIR la carpeta /blog para que WordPress funcione
+RewriteCond %{REQUEST_URI} !^/blog(/|$)
+
+# Archivos y carpetas reales
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todo lo demás a tu app PHP
 RewriteRule ^ index.php [QSA,L]
 

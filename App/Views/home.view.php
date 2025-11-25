@@ -9,20 +9,31 @@
     </div>
 
   <div class="content_cont">
-    <h1>A place to develope  your proyect</h1>
+    <h1>A place to develope your @proyect</h1>
     <div class="proyects">
-  
-    </div>
-    <div class="desc">
-      <p>Diseñamos pensando en la experiencia que va a llevar a tus visitantes a elegirte por encima de la competencia.</p>
-      <div class="proyects">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
       </div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+      </div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+      </div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+      </div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+      </div>
+      <div class="card">
+        <img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+      </div>
+    </div>
+
+    <div class="desc-hero">
+      <p>Diseñamos pensando en la experiencia que va a llevar a tus visitantes a elegirte por encima de la competencia.</p>
+
       <div class="ctas">
         <a href="" class="cta-green">Nuestros servicios</a>
         <a href="" class="cta">Nuestros servicios</a>

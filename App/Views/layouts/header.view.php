@@ -16,7 +16,7 @@
                     <li role="menuitem"><a href="<?= URL_PATH ?>">Inicio</a></li>
                     <li role="menuitem"><a href="https://codigonativo.com/nosotros/">Nosotros</a></li>
                     <li role="group"><button type="button" aria-haspopup="true" aria-expanded="false" id="servicios">Servicios<i class="arrowService fas fa-chevron-down"></i></button></li>
-                    <li role="menuitem"><a href="https://codigonativo.com/blog/">Blog</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>blog">Blog</a></li>
                     <li role="menuitem"><a href="https://codigonativo.com/contacto/">Contacto</a></li>
                 </ul>
                 <ul class="cta-menu">
